@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>Xilium.CefGlue.WindowsForms</RootNamespace>
+    <AssemblyName>Xilium.CefGlue.WindowsForms</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>Quick.CefGlue.WindowsForms</PackageId>
+    <Authors>aaasoft</Authors>
+    <Version>69.0.0</Version>
+    <Company />
+    <Product>Xilium.CefGlue</Product>
+    <Description>A .NET Core portal for Xilium.CefGlue.Support .NET Core 3.0(WinForm,WPF).</Description>
+    <PackageProjectUrl>https://github.com/aaasoft/Quick.CefGlue</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/aaasoft/Quick.CefGlue</RepositoryUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CefWebBrowser.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="CefWebBrowser.bmp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CefGlue\CefGlue.csproj" />
+  </ItemGroup>
+
+</Project>

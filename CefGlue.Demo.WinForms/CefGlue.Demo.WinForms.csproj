@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>Xilium.CefGlue.Demo</RootNamespace>
+    <AssemblyName>Xilium.CefGlue.Demo.WinForms</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\appbar.arrow.left.png" />
+    <None Remove="Resources\appbar.arrow.right.png" />
+    <None Remove="Resources\appbar.close.png" />
+    <None Remove="Resources\appbar.home.png" />
+    <None Remove="Resources\appbar.refresh.png" />
+    <None Remove="Resources\go.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\appbar.arrow.left.png" />
+    <EmbeddedResource Include="Resources\appbar.arrow.right.png" />
+    <EmbeddedResource Include="Resources\appbar.close.png" />
+    <EmbeddedResource Include="Resources\appbar.home.png" />
+    <EmbeddedResource Include="Resources\appbar.refresh.png" />
+    <EmbeddedResource Include="Resources\go.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CefGlue.Demo\CefGlue.Demo.csproj" />
+    <ProjectReference Include="..\CefGlue.WindowsForms\CefGlue.WindowsForms.csproj" />
+    <ProjectReference Include="..\CefGlue\CefGlue.csproj" />
+  </ItemGroup>
+
+</Project>
