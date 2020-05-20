@@ -11,11 +11,7 @@
     <Authors>aaasoft</Authors>
     <Company />
     <Description>A .NET Core portal for Xilium.CefGlue.Support .NET Core 3.0(WinForm,WPF).</Description>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-  </PropertyGroup>
-
 </Project>
